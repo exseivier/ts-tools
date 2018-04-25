@@ -29,4 +29,4 @@ Tools to automate "target scan 7" program.
 	--tscs		Path to mathematical model parameters files.
 ----
 
-## Instalation instructions.
+## Installation instructions.
