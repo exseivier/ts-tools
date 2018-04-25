@@ -46,7 +46,7 @@ installation: check_python python.exist check_perl perl.exist check_R R.exist sc
 	cp scripts/*.pl $(source)
 	cp scripts/*.R $(source)
 	cp ts-tools* $(source)
-	ln -s $(source)/fa2ints.py $(binary)fa2ints
+	ln -s $(source)/fa2ints.py $(binary)/fa2ints
 	ln -s $(source)/miRNAfamily-build.py $(binary)/miRNAfamily-build
 	ln -s $(source)/targetscan_70.pl $(binary)/targetScan
 	ln -s $(source)/target2context.pl $(binary)/targetScan-ctx++
