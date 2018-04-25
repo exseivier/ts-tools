@@ -1,5 +1,5 @@
-binary="/usr/bin/"
-source="/usr/src/"
+binary="/Users/javier/binarios/"
+source="/Users/javier/tScan/"
 PYTHON := $(shell which python 2>/dev/null)
 PERL := $(shell which perl 2>/dev/null)
 R := $(shell which R 2>/dev/null)
@@ -54,6 +54,7 @@ installation: check_python python.exist check_perl perl.exist check_R R.exist sc
 	ln -s $(source)/separateTSresults-2.py $(binary)/targetScan-final
 	ln -s $(source)/targetScan-pp.sh $(binary)/targetScan-pp
 	ln -s $(source)/targetScan-stats-2.R $(binary)/targetScan-stats
+	ln -s $(source)/ts-tools-2.1.sh $(binary)/ts-tools
 
 clear:
 	@rm python.exist perl.exist R.exist
