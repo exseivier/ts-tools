@@ -49,7 +49,8 @@ installation: check_python python.exist check_perl perl.exist check_R R.exist sc
 	ln -s $(source)/fa2ints.py $(binary)/fa2ints
 	ln -s $(source)/miRNAfamily-build.py $(binary)/miRNAfamily-build
 	ln -s $(source)/targetscan_70.pl $(binary)/targetScan
-	ln -s $(source)/target2context.pl $(binary)/targetScan-ctx++
+	ln -s $(source)/target2context.pl $(binary)/target2context
+	ln -s $(source)/targetscan_70_context_scores.pl $(binary)/targetScan-ctx++
 	ln -s $(source)/separateTSresults-2.py $(binary)/targetScan-final
 	ln -s $(source)/targetScan-pp.sh $(binary)/targetScan-pp
 	ln -s $(source)/targetScan-stats-2.R $(binary)/targetScan-stats
