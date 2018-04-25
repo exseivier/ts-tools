@@ -1,5 +1,5 @@
-binary="/Users/javier/binarios/"
-source="/Users/javier/tScan/"
+binary="/usr/bin/"
+source="/usr/src/"
 PYTHON := $(shell which python 2>/dev/null)
 PERL := $(shell which perl 2>/dev/null)
 R := $(shell which R 2>/dev/null)
