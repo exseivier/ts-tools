@@ -22,6 +22,7 @@ ifdef PERL
 	@touch "perl.exist"
 else
 	@echo "Perl was not found"
+	@exit 1
 endif
 
 check_R:
@@ -30,6 +31,7 @@ ifdef R
 	@touch "R.exist"
 else
 	@echo "R was not found"
+	@exit 1
 endif
 
 install_info:
