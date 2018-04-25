@@ -36,11 +36,11 @@ endif
 
 install_info:
 	@echo "Installing in $(binary) and source files are in $(source)" 
-	[[ -d $(binary) ]] || (echo "$(binary) was not found" && mkdir $(binary))
-	[[ -d $(source) ]] || (echo "$(source) was not found" && mkdir $(source))
 
 installation: check_python python.exist check_perl perl.exist check_R R.exist scripts/*.py scripts/*.sh scripts/*.R scripts/*.pl
 	@echo "Procede to install..."
+	[[ -d $(binary) ]] || (echo "$(binary) was not found" && mkdir $(binary))
+	[[ -d $(source) ]] || (echo "$(source) was not found" && mkdir $(source))
 	cp scripts/*.py $(source)
 	cp scripts/*.sh $(source)
 	cp scripts/*.pl $(source)
