@@ -36,4 +36,5 @@ Tools to automate "target scan 7" program.
 		*******    INSTRUCTIONS    ********
 		***********************************
 		
+	cd ts-tools-master
 	make binary="/path/to/binaries/" source="/path/to/source/" install
