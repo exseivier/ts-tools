@@ -30,3 +30,10 @@ Tools to automate "target scan 7" program.
 ----
 
 ## Installation instructions.
+
+		***********************************
+		*******    INSTALLATION    ********
+		*******    INSTRUCTIONS    ********
+		***********************************
+		
+	make binary="/path/to/binaries/" source="/path/to/source/" install
