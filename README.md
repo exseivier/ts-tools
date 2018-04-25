@@ -1,5 +1,5 @@
 # ts-tools
-Tools to automate "target scan 7" program
+Tools to automate "target scan 7" program.
 
 ----
 
@@ -27,3 +27,6 @@ Tools to automate "target scan 7" program
 	--window	Window size in hypergeometric test of target-scan results.
 	--percent	Percentage of top gene targets used for target-scan results analysis.
 	--tscs		Path to mathematical model parameters files.
+----
+
+Instalation instructions.
