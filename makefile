@@ -1,11 +1,11 @@
-binary="/Users/javier/binarios/"
-source="/Users/javier/tScan/"
+binary=""
+source=""
 PYTHON := $(shell which python 2>/dev/null)
 PERL := $(shell which perl 2>/dev/null)
 R := $(shell which R 2>/dev/null)
 
 
-all: installation install_info clear
+install: check_vars installation install_info make_exe clear
 
 check_python:
 ifdef PYTHON
@@ -34,6 +34,10 @@ else
 	@exit 1
 endif
 
+check_vars:
+	@[[ ! -z $(binary) ]] || (echo "binary path was not specified" && exit 1)
+	@[[ ! -z $(source) ]] || (echo "source path was not specified" && exit 1)
+
 install_info:
 	@echo "Installing in $(binary) and source files are in $(source)" 
 
@@ -55,6 +59,10 @@ installation: check_python python.exist check_perl perl.exist check_R R.exist sc
 	ln -s $(source)/targetScan-pp.sh $(binary)/targetScan-pp
 	ln -s $(source)/targetScan-stats-2.R $(binary)/targetScan-stats
 	ln -s $(source)/ts-tools-2.1.sh $(binary)/ts-tools
+
+make_exe: $(source)
+	@chmod 755 $(source)/*
+	@echo "Changing file permissions"
 
 clear:
 	@rm python.exist perl.exist R.exist
