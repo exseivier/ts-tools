@@ -87,8 +87,8 @@ def dna_2_rna(dna):
 
 
 from sys import argv, exit, path
-path.append('/Users/javier/scripts/ban-4.0/utils/')
-from Utils import load_Ome, dna_2_rna
+#path.append('/Users/javier/scripts/ban-4.0/utils/')  # Commented because functions in Utils library were copied and pasted in this script
+#from Utils import load_Ome, dna_2_rna
 infile = argv[1]
 speciesID = "0001"
 sequences = load_Ome(infile)
