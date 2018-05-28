@@ -74,6 +74,18 @@ def load_Ome(filename):
 		print "'Ome' is empty!"
 		exit(0)
 
+def dna_2_rna(dna):
+	"""
+	"""
+	rna=""
+	for nt in dna:
+		if nt.upper() == "T":
+			rna = rna + "U"
+		else:
+			rna = rna + nt.upper()
+	return rna
+
+
 from sys import argv, exit, path
 path.append('/Users/javier/scripts/ban-4.0/utils/')
 from Utils import load_Ome, dna_2_rna
